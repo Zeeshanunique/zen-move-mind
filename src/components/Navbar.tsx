@@ -1,6 +1,6 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { Activity, Calendar, Clock, History } from "lucide-react";
+import { Activity, Dumbbell, Clock, History } from "lucide-react";
 
 const Navbar = () => {
   const location = useLocation();
@@ -17,7 +17,7 @@ const Navbar = () => {
           <span className="text-xs mt-1">Dashboard</span>
         </Link>
         <Link to="/exercise" className={`nav-item ${isActive("/exercise") ? "active" : ""}`}>
-          <Activity size={24} />
+          <Dumbbell size={24} />
           <span className="text-xs mt-1">Exercise</span>
         </Link>
         <Link to="/meditation" className={`nav-item ${isActive("/meditation") ? "active" : ""}`}>
